@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monah Abou Hattoum</title>
+<meta name="description" content="Software developer. I make small, careful games.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .hero { padding-top: 1rem; }
+  .games { display: grid; gap: 1rem; margin: 2rem 0 0; }
+  .game {
+    display: block; padding: 1.25rem 1.4rem; border-radius: 14px;
+    background: var(--night-soft); border: 1px solid var(--edge);
+    text-decoration: none; color: var(--cream); transition: border-color .15s, transform .15s;
+  }
+  .game:hover { border-color: var(--gold); transform: translateY(-2px); }
+  .game h3 { margin: 0 0 .35rem; color: var(--gold); font-size: 1.15rem; }
+  .game p { margin: 0; color: var(--muted); font-size: .97rem; }
+  .game .status {
+    display: inline-block; margin-top: .7rem; font-size: .8rem; letter-spacing: .04em;
+    text-transform: uppercase; color: var(--leaf); border: 1px solid rgba(127,192,160,.4);
+    border-radius: 999px; padding: .25rem .7rem;
+  }
+</style>
+</head>
+<body>
+<header class="site"><span class="mark"></span><a href="./">monah.me</a></header>
+
+<div class="wrap hero">
+  <h1>Monah Abou Hattoum</h1>
+  <p class="lede">Software developer. I build small, careful things, mostly late at night after everyone else has gone to bed.</p>
+
+  <h2>Games</h2>
+  <div class="games">
+    <a class="game" href="https://lumagarden.monah.me/">
+      <h3>Wake the Garden</h3>
+      <p>A quiet puzzle game for curious minds. Turn the stone paths so Luma's light can travel, until every flower wakes up. 500 gardens, no timers on most of them, and nothing to lose.</p>
+      <span class="status">Coming to the App Store and Google Play</span>
+    </a>
+  </div>
+
+  <h2>Get in touch</h2>
+  <p>Write to <a href="mailto:info@monah.me">info@monah.me</a>. It reaches one person, and you will get a real reply.</p>
+
+  <footer>
+    <p><a href="https://lumagarden.monah.me/">Wake the Garden</a> &middot; <a href="mailto:info@monah.me">info@monah.me</a></p>
+  </footer>
+</div>
+</body>
+</html>
