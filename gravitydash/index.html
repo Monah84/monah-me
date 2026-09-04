@@ -4,18 +4,53 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gravity Dash</title>
-<meta name="description" content="One tap flips gravity. Dodge the obstacles, collect the stars.">
+<meta name="description" content="One tap flips gravity. Fly through the gaps, collect the stars, and see how far you get.">
+<meta property="og:title" content="Gravity Dash">
+<meta property="og:description" content="One tap flips gravity. Four modes, three difficulties, and a speed that builds gradually.">
 <link rel="stylesheet" href="../style.css">
+<style>
+  .modes { display: grid; gap: .9rem; margin: 1.4rem 0; }
+  .mode { padding: 1rem 1.2rem; border-radius: 12px; background: var(--night-soft); border: 1px solid var(--edge); }
+  .mode b { color: var(--gold); display: block; margin-bottom: .2rem; }
+  .mode span { color: var(--muted); font-size: .96rem; }
+  .diff { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .8rem; margin: 1.2rem 0; }
+  .diff div { padding: .9rem 1rem; border-radius: 12px; border: 1px solid var(--edge); background: var(--night-soft); }
+  .diff b { color: var(--leaf); }
+  .diff small { display: block; color: var(--muted); margin-top: .25rem; line-height: 1.45; }
+</style>
 </head>
 <body>
 <header class="site"><span class="mark"></span><a href="../">monah.me</a></header>
+
 <div class="wrap">
   <h1>Gravity Dash</h1>
-  <p class="lede">One tap flips which way gravity pulls. Fly through the gap in each obstacle, collect the stars, and see how far you get.</p>
+  <p class="lede">One tap flips gravity. That is the whole control. You are pulled to the floor, then to the ceiling, and back again, and your job is to find the gap.</p>
 
-  <p>There are three difficulties. <strong>Gentle</strong> starts slow, keeps the gaps wide and gives you two shields. <strong>Hard</strong> gives you none. The speed builds gradually rather than starting fast, so there is room to learn the flip before it asks anything of you.</p>
+  <p>It is built for short sessions. A run takes about a minute, there is nothing to sign up for, and it works with no connection at all.</p>
 
-  <h2>Support</h2>
+  <h2>Pick a difficulty that suits you</h2>
+  <div class="diff">
+    <div><b>Gentle</b><small>Starts slow, keeps the gaps wide, and gives you two shields to spend on mistakes.</small></div>
+    <div><b>Normal</b><small>The standard run. One shield.</small></div>
+    <div><b>Hard</b><small>No shields at all. Nothing between you and the wall.</small></div>
+  </div>
+  <p>The speed builds gradually in every mode rather than starting fast, so there is room to learn the flip before the game asks anything of you.</p>
+
+  <h2>Four ways to play</h2>
+  <div class="modes">
+    <div class="mode"><b>Classic</b><span>Endless. Survive as long as you can.</span></div>
+    <div class="mode"><b>Speed Run</b><span>Sixty seconds, faster from the first obstacle.</span></div>
+    <div class="mode"><b>Perfect Run</b><span>No shields, no power-ups. One hit ends it.</span></div>
+    <div class="mode"><b>Daily</b><span>One fixed layout, the same for everybody, every day.</span></div>
+  </div>
+
+  <h2>Power-ups</h2>
+  <p>Shield absorbs one hit. Magnet pulls in nearby stars. Slow-Mo gives you a moment to think.</p>
+
+  <h2>What it does not do</h2>
+  <p>No account. No sign-up. No chat, and no way for anyone to contact you through the game. Your scores and settings stay on your device. The detail is in the <a href="privacy.html">privacy policy</a>, which is short.</p>
+
+  <h2>Get in touch</h2>
   <p>Something broken, or a question? Write to <a href="mailto:info@monah.me">info@monah.me</a> and you will get a real reply.</p>
 
   <ul class="nav">
