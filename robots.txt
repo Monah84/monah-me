@@ -1,0 +1,11 @@
+# Everything here is public and meant to be crawled.
+User-agent: *
+Disallow:
+
+# Named explicitly because AdMob support asks for it when verifying an app:
+# app-ads.txt must be reachable by Google's ads crawlers.
+User-agent: Google-adstxt
+Disallow:
+
+User-agent: AdsBot-Google
+Disallow:
